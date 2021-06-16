@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(70, 70, 65);
+  color: rgb(255, 255, 230);
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+p {
+  text-align: left;
+  font-size: 130%;
+}
+
+a {
+  background-color: rgb(255, 255, 230);
+  color: rgb(70, 70, 65);
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
