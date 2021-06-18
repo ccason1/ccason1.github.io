@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(70, 70, 65);
+  color: rgb(255, 255, 230);
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+p {
+  text-align: left;
+  font-size: 130%;
+}
+
+a {
+  background-color: rgb(255, 255, 230);
+  color: rgb(70, 70, 65);
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: rgb(215, 215, 190);
+  color: black;
+}
+
+select {
+	background-color: rgb(70, 70, 65);
+	color: rgb(255, 255, 230);
+	border: none;
+	width: 50px;
+	position: relative;
+	overflow: hidden;
+	padding: 2px;
+}
+
+option {
+	font-size: 180%;
+	text-align: center;
+}
+
+option:hover {
+	background-color: rgb(100, 100, 95);
+}
