@@ -1,0 +1,29 @@
+<html !DOCTYPE>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<p>
+		You are standing in your apartment, which is simply a bed, a bathroom with a cramped shower, and a sitting corner with a comfortable chair and television. What would you like to do?
+	</p>
+	
+	<!-- check message -->
+	<button onclick="showHideText('messages')">Check messages</button>
+	<p class="hidden" id="messages">
+		[Unknown Sender]: Meet me at Rutger Farm.
+	</p>
+
+	<!-- see what's on tv -->
+	<button onclick="showHideText('tv')">See what's on tv</button>
+	<p class="hidden" id="tv"> 
+		The news is on. The anchorwoman says that the Lofty Gardens Country Club has been temporarily closed down after giant spiders were spotted on the golf course. In related news, giant spiders have been collecting in large numbers around the industrial sector, clogging pipes with their webs and making workers feel uncomfortable.
+	</p>
+	
+	<!-- leave apartment -->
+	<a href="map.html">Leave apartment</a>
+	
+	<script src="general-functions.js"></script>
+	
+</body>
+</html>
