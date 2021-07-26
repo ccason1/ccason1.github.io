@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+   <title>Film Data Analysis</title>
+	 <style>
+	    body {
+	       width: 70%;
+				 margin-left: 15%;
+		  }
+			h4 {
+			   margin-bottom: 0px;
+			}
+			p {
+			   margin-top: 4px;
+			}
+			
+	 </style>
+</head>
+<body>
+  <h1>Analysis of Netflix Original Films Data</h1>
+  <h2>Data Analysis - Application and Presentation Assignment for CS1030</h2>
+  <p>Author: Conlan Cason</p>
+	<p>Published: July 26, 2021</p>
+	
+	<br>
+	
+	<h3>Questions and Hypotheses</h3>
+	<p>Question: is there a correlation between genre and IMDB score?</p>
+  <p>Question: is there a correlation between IMDB score and runtime?</p>
+  <p>Hypothesis: the average IMDB score is significantly above 5</p>
+	
+	<br>
+	
+	<h3>Abstract</h3>
+	
+	<h4>Correlation between genre and IMDB score</h4>
+	<p>
+	   There does appear to be some correlation between genre and IMDB score. 
+	   For example, documentaries got an average score of approximately 6.9 out of 10, 
+		 whereas thrillers only got around 5.6 out of 10.
+  </p>
+  
+	<h4>Correlation between IMDB score and runtime</h4>
+	<p>
+	   Looking at the scatter chart, there does not appear to be a correlation 
+		 between IMDB score and runtime.
+	</p>
+  
+	<h4>Is average IMDB score above 5</h4>
+	<p>
+	   My hypothesis that the average IMDB score is significantly above
+		 5 appears to be correct. The reasoning behind the hypothesis is
+		 that people tend to watch films that they are interested in, and
+		 have a better chance of scoring higher than if they only watched
+		 films that they weren't interested in. However, the actual reason
+		 behind the correlation could be different. For example, maybe
+		 Netflix originals have a better reception than non-Netflix originals.
+	</p>
+	<br>
+	
+	<h3>Methods</h3>
+	
+	<h4>Correlation between genre and IMDB score</h4>
+	<p>
+	   To find out whether or not there is a correlation between genre and
+	   IMDB score, I wrote a <a href="genre_rating_analysis.html" target="_blank">Python script</a> 
+		 that analyzes a dataset containing
+		 a list of films, with a genre and IMDB score associated with each film.
+		 From this data, I created a dictionary of genres, with each genre having
+		 an associated list of IMDB scores. I eliminated genres containing too 
+		 few films associated with them in order to simplify the data and make
+		 it more understandable. I think this elimination process is fair
+		 because whether I use a hundred genres or five does not change the
+		 conclusion or obscure any essential facts. From there I created a
+		 new dictionary with each list of scores averaged into single scores
+		 for each genre. After that I used plotly to generate a bar chart to
+		 visualize the data.
+		 </p>
+		 <img src="genre_ratings_barchart.png" alt="A bar chart showing the correlation between genres and ratings" style="width:50%;align:right;">
+     
+		 <h4>Correlation between IMDB score and runtime</h4>
+		 <p>
+		    To answer the second question, "Is there a correlation between IMDB
+				score and runtime?" I generated a <a href="scatterchart.html" target="_blank">Scatter Chart</a> using plotly
+				in a <a href="rating_to_runtime.html" target="_blank">Python script</a>. 
+				From a purely visual analysis, I can see no correlation.
+		 </p>
+     
+		 <h4>Is average IMDB score above 5</h4>
+		 <p>
+		    To find a conclusion to the claim, "The average IMDB score is significantly
+				above 5," I created a <a href="ratings_analysis.html" target="_blank">Python script</a>
+				to analyze the IMDB scores. The
+				average score turns out to be approximately 6.3, with a 99% confidence
+				interval of (6.17, 6.38)--which means we are 99% confident that the true
+				average IMDB score of Netflix Originals is between these two values.
+		 </p>
+		 <br>
+		 <p>
+		    Source: 
+		    <a href="https://www.kaggle.com/luiscorter/netflix-original-films-imdb-scores" target="_blank">Netflix Original Films IMDB Scores</a>
+		 </p>
+		 <br>
+</body>
+</html>
