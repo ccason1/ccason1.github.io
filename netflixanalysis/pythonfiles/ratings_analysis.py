@@ -1,4 +1,4 @@
-#Hypothesis: all ratings are above average
+#Hypothesis: the average rating is significantly above 5
 
 import csv
 import numpy as np
